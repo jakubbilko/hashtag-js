@@ -44,4 +44,36 @@ You can set options for the library by using the setOptions() function and passi
 Templates
 ---------
 
-Hashtags.js supports a simple templating system for replacing tags. 
+Hashtags.js supports a simple templating system for replacing tags. To specify a template that should be used for replacing tags, pass it in the setOptions() function:
+
+```
+Hashtag.setOptions({
+    'template': '<a href="https://twitter.com/hashtag/{#n}">{#}</a>'
+})
+```
+
+Upon calling the replaceTags() function, all the tags will be replaced with the provided template.
+
+You have two expressions you can use in the template:
+- {#} - the hashtag
+- {#n} - the name of the hashtag (whitout '#', handy for using in links)
+
+Multiple templates
+------------------
+
+You can have multiple templates set up that yo can alternately use. To do so, you must specify a list of templates in the setOptions() function:
+
+```
+Hashtag.setOptions({
+		templates: {
+			'twitter': '<a href="https://twitter.com/hashtag/{#n}">{#}</a>',
+			'fb': '<a href="https://www.facebook.com/hashtag/{#n}">{#}</a>'
+		}
+	});
+```
+
+Now you can use your templates with the replaceTags() function:
+
+```
+Hashtag.replaceTags('#myDiv', 'fb');
+```
