@@ -65,11 +65,11 @@ You can have multiple templates set up that yo can alternately use. To do so, yo
 
 ```
 Hashtag.setOptions({
-		templates: {
-			'twitter': '<a href="https://twitter.com/hashtag/{#n}">{#}</a>',
-			'fb': '<a href="https://www.facebook.com/hashtag/{#n}">{#}</a>'
-		}
-	});
+	templates: {
+		'twitter': '<a href="https://twitter.com/hashtag/{#n}">{#}</a>',
+		'fb': '<a href="https://www.facebook.com/hashtag/{#n}">{#}</a>'
+	}
+});
 ```
 
 Now you can use your templates with the replaceTags() function:
