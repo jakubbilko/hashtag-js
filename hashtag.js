@@ -1,6 +1,6 @@
 /*
 
-Hashtag.js v0.1 (https://github.com/kozulowski/hashtag-js)
+Hashtag.js v0.1 (https://github.com/jakubbilko/hashtag-js/)
 Copyright (c) 2014 Jakub Bilko (http://jakubbilko.pl)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
